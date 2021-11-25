@@ -12,19 +12,19 @@ Each of these started out as a recorded macro but were rewritten and are broken 
 
 ![excel sheet with macro buttons and accompanying data](./assets/excel-display.jpg)
 
-##Integration Subroutines
+## Integration Subroutines
 If multiple lines of analsys are, or can be, used for further analyses, these subroutines enable the user to switch between the basis of analysis. Box colors are changed to highlight which basis is being set.
 
 The subroutine first targets the individual cells in the bottom row of the pictured image, then rewrites what the cells are equal to, depending on the subroutine initiated. Thus, for instance, BIntegration starts at cell c15, and sets it to the matching information in the second line of analysis (contained in cell rows 10 and 11), then moves to cell d15 and sets it equal to the matching information, etc.
 
 Then, the subroutine highlights the relevant cellgs in column g (in Bintegration, the merged cells of g10 and g11) and removes the highlighting in the other g cells (if any).
 
-##Goal Seek Subroutines
+## Goal Seek Subroutines
 In normal circumstances, the goal seek can only be done by input text into the pop up window. The subroutines initiate a goal seek, where the range and goal value are predetermined cells, useful in contexts where one cell is consistently targetted for a goal. There are six subroutines which target six diffrent cells, and each have their own cells designated at the place where the value of the goal is stored.
 
 The subroutine first selects the cell that contains the value looking to be modified. Then it initiates a goal seek. The goal value is determine by the value in the cell immediately above the button.
 
-##Cost Basis Subroutines
+## Cost Basis Subroutines
 If multiple lines of analysis are used to calculate profit, these subroutines can allow for easy comparison when the basis for those analyses are disparate.
 
 ### PY_Hourly and PY_Salary
