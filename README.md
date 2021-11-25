@@ -10,7 +10,7 @@ Each of these started out as a recorded macro but were rewritten and are broken 
 -Switch the basis of profit analysis from either an hourly rate or salaried rate, and from either a (normalized) hourly rate or from a total cost (an hourly rate plus benefits/taxes).
 (a normalized hourly rate is the hourly rate that would equal the yearly compensation a salaried employee would make if they were to switch to an hourly rate AND use the maximum allow time off provided under a company's time off policy)
 
-![excel sheet with macro buttons and accompanying data](./assets/excel-display.JPG)
+![excel sheet with macro buttons and accompanying data](./assets/excel-display.jpg)
 
 ##Integration Subroutines
 If multiple lines of analsys are, or can be, used for further analyses, these subroutines enable the user to switch between the basis of analysis. Box colors are changed to highlight which basis is being set.
