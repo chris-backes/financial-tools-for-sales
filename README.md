@@ -1,19 +1,19 @@
 # Modified Macros for Profit Analysis of Billed Labor
 
-Modified Excel macros used in the context of sales of billed labor to see margin and total profit over time.
+Scripts that began as recorded macros but were modified in VBA, to be used in the context of sales of billed labor to see margin and total profit over time.
 
 Please Note: These were written at a time when I was teaching myself to code. The code itself is clunkier than it needs to be in many places, and any breach of naming conventions was out of ignorance. These were written approximately two years prior to being first uploaded to GitHub.
 
 Each of these started out as a recorded macro but were rewritten and are broken into three basic groups.
--Integrates a different analysis with ancillary tools (not discussed or presented here)
--Initiates the goal seek applicaiton within Excel, where the input variables are not provided in the pop-up window as usual, but rather refer to specified cells
--Switch the basis of profit analysis from either an hourly rate or salaried rate, and from either a (normalized) hourly rate or from a total cost (an hourly rate plus benefits/taxes).
+- Integrates a different analysis with ancillary tools (not discussed or presented here)
+- Initiates the goal seek applicaiton within Excel, where the input variables are not provided in the pop-up window as usual, but rather refer to specified cells
+- Switch the basis of profit analysis from either an hourly rate or salaried rate, and from either a (normalized) hourly rate or from a total cost (an hourly rate plus benefits/taxes).
 (a normalized hourly rate is the hourly rate that would equal the yearly compensation a salaried employee would make if they were to switch to an hourly rate AND use the maximum allow time off provided under a company's time off policy)
 
 ![excel sheet with macro buttons and accompanying data](./assets/excel-display.jpg)
 
 ## Integration Subroutines
-If multiple lines of analsys are, or can be, used for further analyses, these subroutines enable the user to switch between the basis of analysis. Box colors are changed to highlight which basis is being set.
+If multiple lines of analyses are, or can be, used for further analysis, these subroutines enable the user to switch between the basis of analysis. Box colors are changed to highlight which basis is being set. The values used diplay on the bottom row of the picutre above , and further analysis using these value can refer to these cells (it is also possible to write the subroutine such that it alters the formula of any dependent analyses rather than changing cell referents).
 
 The subroutine first targets the individual cells in the bottom row of the pictured image, then rewrites what the cells are equal to, depending on the subroutine initiated. Thus, for instance, BIntegration starts at cell c15, and sets it to the matching information in the second line of analysis (contained in cell rows 10 and 11), then moves to cell d15 and sets it equal to the matching information, etc.
 
